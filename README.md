@@ -3,6 +3,9 @@
 A simple Library application built as part of **The Odin Project** curriculum.  
 The app allows users to add, display, update, and remove books using JavaScript and DOM manipulation.
 
+## Live Link
+https://syedtanzim.github.io/library/
+
 ## Features
 
 - Add new books with title, author, number of pages, and read status
@@ -67,6 +70,3 @@ The read status can be toggled using a prototype method.
 ## Acknowledgements
 
 - [The Odin Project](https://www.theodinproject.com/) for the project idea and guidance
-
-## Live Link
-https://syedtanzim.github.io/Library/
