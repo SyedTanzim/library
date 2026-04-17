@@ -93,8 +93,12 @@ function addBookToLibrary(id, title, author, pages, read) {
     renderBooks();
 };
 
-document.querySelector('.submitBookBtn').addEventListener('click', (e) => {
+const form = document.getElementById('form');
+
+form.addEventListener('submit', (e) => {
+
     e.preventDefault();
+
     const title = document.getElementById('titleIp').value;
     const author = document.getElementById('authorIp').value;
     const pages = document.getElementById('pagesIp').value;
@@ -106,4 +110,7 @@ document.querySelector('.submitBookBtn').addEventListener('click', (e) => {
     };
 
     addBookToLibrary(crypto.randomUUID(), title, author, pages, readStatus);
+
+    form.reset();
+    document.querySelector('.modal').close();
 });
